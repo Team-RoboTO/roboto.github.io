@@ -1,0 +1,90 @@
+* {
+  text-align: center;
+  background-color: black;
+  color: white;
+  font-family: 'Sans';
+  font-weight: 100;  
+}
+
+
+
+@font-face {
+  font-family: 'Bord'; /*a name to be used later*/
+  src: url('../public/fonts/Bord.otf'); /*URL to font*/
+}
+
+
+
+.nav {
+  background-color: black;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  height: 60px;
+  margin: 10px 40px;
+  padding: 0px 20px;
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 15px;
+}
+.logo-img {
+  color: white;
+  max-width: 30px;
+  border-color: white;
+}
+
+.logo-name {
+  font-family: 'Bord';
+}
+
+.logo-name, .noDecoration, .logo-name:visited, .logo-name:hover, .logo-name:link, .logo-name:active{
+  color: white;
+  font-size: 20px;  
+  text-decoration: none;  
+
+}
+
+
+.links {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 50px;
+}
+
+.mainSection {
+  font-size: 20px;
+  font-weight:100;  
+  text-align: center;
+  padding: 20px;
+  padding: 50px 100px;
+}
+
+.mainContainer{
+  padding:50px;
+}
+
+.footer  {  
+  position: absolute;
+  font-size: 10px;
+  font-weight: 100px;
+  bottom: 0px;
+  width: 100%;
+  font-size: 100;
+}
+
+
+.about{
+  padding-top:50px;
+}
+
+.justified {
+  justify-content: start;
+  margin-bottom: 50px;
+}
