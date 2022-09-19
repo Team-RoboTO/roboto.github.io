@@ -12,19 +12,16 @@ import {Route, Link, Routes, BrowserRouter} from 'react-router-dom';
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter >
     <div >
       <Navbar />
     </div>
 
-      
-
-
       <Routes>
 
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/contact" element={<Contact />} />
+        <Route path="/roboto.github.io" element={<Home />} />
+        <Route path="/giovanni" element={<About />} />
+        <Route path="/roboto.github.io/contact" element={<Contact />} />
 
 
           {/* 👇️ only match this when no other routes match */}
