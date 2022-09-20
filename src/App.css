@@ -62,8 +62,7 @@
   font-size: 20px;
   font-weight:100;  
   text-align: center;
-  padding: 20px;
-  padding: 50px 100px;
+  padding: 50px 10%;
 }
 
 .mainContainer{
@@ -82,6 +81,7 @@
 
 .about{
   padding-top:50px;
+  justify-content: left;
 }
 
 .justified {

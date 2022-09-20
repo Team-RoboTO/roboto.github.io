@@ -5,23 +5,25 @@ import Navbar from './components/Navbar';
 import About from './components/About'; 
 import Contact from './components/Contact';
 import Footer from './components/Footer';
-import {Route, Link, Routes, BrowserRouter} from 'react-router-dom';
+import {Route, Link, Routes, BrowserRouter, HashRouter} from 'react-router-dom';
 
 
+
+//<BrowserRouter basename={process.env.PUBLIC_URL}>
 
 
 function App() {
   return (
-    <BrowserRouter >
+    <HashRouter >
     <div >
       <Navbar />
     </div>
 
       <Routes>
 
-        <Route path="/roboto.github.io" element={<Home />} />
-        <Route path="/giovanni" element={<About />} />
-        <Route path="/roboto.github.io/contact" element={<Contact />} />
+        <Route path="" element={<Home />} />
+        <Route path="about" element={<About />} />
+        <Route path="contact" element={<Contact />} />
 
 
           {/* 👇️ only match this when no other routes match */}
@@ -34,7 +36,7 @@ function App() {
         
         </Routes>
         
-    </BrowserRouter>
+  </HashRouter>
 
   );
 }
